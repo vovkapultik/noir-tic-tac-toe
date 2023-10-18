@@ -47,6 +47,7 @@ fn determine_winner(board : [u2; 9]) -> u2 {
 fn main(board : [u2; 9], game : pub u16, winner : pub u2) {
     // board is an array of cells where:
     // 1st user is 0, 2nd user is 1, no move is 2
+    assert(winner < 2);
 
     // validate if the board situation is theoretically possible
     validate_moves(board);
